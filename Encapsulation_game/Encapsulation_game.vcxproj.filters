@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Window_h">
+      <UniqueIdentifier>{9e6e9743-51e5-4a09-923a-4735ad55c368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Render_cpp">
+      <UniqueIdentifier>{27200bc0-2d61-4b33-bd75-34eda0fd0f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Window_cpp">
+      <UniqueIdentifier>{8aaf6e77-0bec-4150-969e-da9b6f601d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Render_h">
+      <UniqueIdentifier>{3b63e17d-7909-4020-957b-f564286e38c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="libManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="timeManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="windowRaylib.cpp">
+      <Filter>Fichiers sources\Window_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="windowManager.cpp">
+      <Filter>Fichiers sources\Window_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="windowSDL.cpp">
+      <Filter>Fichiers sources\Window_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="spriteSDL.cpp">
+      <Filter>Fichiers sources\Render_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="spriteRaylib.cpp">
+      <Filter>Fichiers sources\Render_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="renderManager.cpp">
+      <Filter>Fichiers sources\Render_cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libManager.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="timeManager.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="windowManager.h">
+      <Filter>Fichiers d%27en-tête\Window_h</Filter>
+    </ClInclude>
+    <ClInclude Include="windowRaylib.h">
+      <Filter>Fichiers d%27en-tête\Window_h</Filter>
+    </ClInclude>
+    <ClInclude Include="windowSDL.h">
+      <Filter>Fichiers d%27en-tête\Window_h</Filter>
+    </ClInclude>
+    <ClInclude Include="spriteSDL.h">
+      <Filter>Fichiers d%27en-tête\Render_h</Filter>
+    </ClInclude>
+    <ClInclude Include="renderManager.h">
+      <Filter>Fichiers d%27en-tête\Render_h</Filter>
+    </ClInclude>
+    <ClInclude Include="spriteRaylib.h">
+      <Filter>Fichiers d%27en-tête\Render_h</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

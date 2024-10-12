@@ -1,0 +1,4 @@
+#ifndef __RAYLIBWINDOWMANAGER_H__
+#define __RAYLIBWINDOWMANAGER_H__
+
+#endif

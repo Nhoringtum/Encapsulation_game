@@ -1,0 +1,3 @@
+#ifndef __RAYLIBRENDERMANAGER_H__
+#define __RAYLIBRENDERMANAGER_H__
+#endif
