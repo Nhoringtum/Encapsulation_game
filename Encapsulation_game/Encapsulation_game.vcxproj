@@ -130,24 +130,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="circle.cpp" />
+    <ClCompile Include="customColor.cpp" />
     <ClCompile Include="libManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="renderManager.cpp" />
+    <ClCompile Include="point.cpp" />
+    <ClCompile Include="rect.cpp" />
     <ClCompile Include="spriteRaylib.cpp" />
     <ClCompile Include="spriteSDL.cpp" />
     <ClCompile Include="timeManager.cpp" />
-    <ClCompile Include="windowManager.cpp" />
+    <ClCompile Include="customVector2.cpp" />
     <ClCompile Include="windowRaylib.cpp" />
     <ClCompile Include="windowSDL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circle.h" />
+    <ClInclude Include="customColor.h" />
     <ClInclude Include="includes.h" />
     <ClInclude Include="libManager.h" />
-    <ClInclude Include="renderManager.h" />
+    <ClInclude Include="point.h" />
+    <ClInclude Include="rect.h" />
     <ClInclude Include="spriteRaylib.h" />
     <ClInclude Include="spriteSDL.h" />
     <ClInclude Include="timeManager.h" />
-    <ClInclude Include="windowManager.h" />
+    <ClInclude Include="customVector2.h" />
     <ClInclude Include="windowRaylib.h" />
     <ClInclude Include="windowSDL.h" />
   </ItemGroup>

@@ -1,8 +1,8 @@
 #ifndef __SPRITERAYLIB_H__
 #define __SPRITERAYLIB_H__
-#include "renderManager.h"
+#include "libManager.h"
 
-class SpriteRaylib : RenderManager
+class SpriteRaylib
 {
 public:
 	SpriteRaylib();
@@ -11,7 +11,7 @@ public:
 
 	void draw_circle();
 	void draw_wall();
-	virtual void move() = 0;
+	//virtual void move() = 0;
 };
 
 #endif

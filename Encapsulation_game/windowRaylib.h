@@ -1,14 +1,18 @@
 #ifndef __WINDOWRAYLIB_H__
 #define __WINDOWRAYLIB_H__
-#include "windowManager.h"
+#include "libManager.h"
 
-class WindowRaylib : WindowManager
+class WindowRaylib
 {
 public:
 	WindowRaylib();
 
-	void initWindow();
-	void drawWindow();
+	bool m_is_paused;
+
+	void init_window(int w, int h, const char* win_name);
+	void draw_fps();
+
+	~WindowRaylib();
 };
 
 #endif

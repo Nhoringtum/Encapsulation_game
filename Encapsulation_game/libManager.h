@@ -1,14 +1,29 @@
 #ifndef __LIBMANAGER_H__
 #define __LIBMANAGER_H__
+#include <SDL2/SDL.h>
+#include <raylib.h>
+#include <iostream>
+#include <string>
+#include "windowSDL.h"
+#include "spriteSDL.h"
+#include "windowRaylib.h"
+#include "spriteRaylib.h"
+
+enum LibType
+{
+	SDL,
+	RAYLIB
+};
 
 class LibManager
 {
 public:
-	LibManager();
+	
+	LibType m_choosen_lib;
 
-	void init_render_manager();
-	void init_time_manager();
-	void init_window_manager();
+	LibManager(LibType choosen_lib);
+	LibManager();
+	~LibManager();
 };
 
 #endif

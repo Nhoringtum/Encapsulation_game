@@ -2,14 +2,16 @@
 
 WindowSDL::WindowSDL()
 {
-	initSDL();
-	initWindow();
-	initSurface();
-	updateWindow();
-	pause();
+	init_sdl();
+	init_window();
+	start_frame();
+	update_window();
+	end_frame();
+	draw_fps();
+	//pause();
 };
 
-int WindowSDL::initSDL()
+int WindowSDL::init_sdl()
 {
 	// Initialize SDL. SDL_Init will return -1 if it fails.
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -19,9 +21,10 @@ int WindowSDL::initSDL()
 		// End the program
 		return 1;
 	}
+	return 0;
 };
 
-int WindowSDL::initWindow()
+int WindowSDL::init_window()
 {
 	// Create our window
 	m_window = SDL_CreateWindow("Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
@@ -34,28 +37,28 @@ int WindowSDL::initWindow()
 		// End the program
 		return 1;
 	}
+	return 0;
 };
 
-int WindowSDL::initSurface()
-{
-	// Get the surface from the window
-	m_winSurface = SDL_GetWindowSurface(m_window);
-
-	// Make sure getting the surface succeeded
-	if (!m_winSurface)
-	{
-		std::cout << "Error getting surface: " << SDL_GetError() << std::endl;
-		system("pause");
-		// End the program
-		return 1;
-	}
-
-	SDL_FillRect(m_winSurface, NULL, SDL_MapRGB(m_winSurface->format, 255, 255, 255));
-}
-
-void WindowSDL::updateWindow()
+void WindowSDL::update_window()
 {
 	SDL_UpdateWindowSurface(m_window);
+};
+
+void WindowSDL::draw_fps()
+{
+	float elapsed = (m_end - m_start) / (float)SDL_GetPerformanceFrequency();
+	std::cout << "Current FPS: " << std::to_string(1.0f / elapsed) << std::endl;
+};
+
+void WindowSDL::start_frame()
+{
+	m_start = SDL_GetPerformanceCounter();
+};
+
+void WindowSDL::end_frame()
+{
+	m_end = SDL_GetPerformanceCounter();
 };
 
 void WindowSDL::pause()

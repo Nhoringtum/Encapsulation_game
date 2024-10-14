@@ -16,13 +16,19 @@
     <Filter Include="Fichiers d%27en-tête\Window_h">
       <UniqueIdentifier>{9e6e9743-51e5-4a09-923a-4735ad55c368}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Render_cpp">
-      <UniqueIdentifier>{27200bc0-2d61-4b33-bd75-34eda0fd0f8d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Fichiers sources\Window_cpp">
       <UniqueIdentifier>{8aaf6e77-0bec-4150-969e-da9b6f601d3e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers d%27en-tête\Render_h">
+    <Filter Include="Fichiers d%27en-tête\Math_h">
+      <UniqueIdentifier>{19e170ef-926f-4b0c-837d-8bae2afd2d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Math_cpp">
+      <UniqueIdentifier>{88210335-6cb9-47d3-a8d8-200df93ea0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Sprite_cpp">
+      <UniqueIdentifier>{27200bc0-2d61-4b33-bd75-34eda0fd0f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Sprite_h">
       <UniqueIdentifier>{3b63e17d-7909-4020-957b-f564286e38c6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -39,20 +45,29 @@
     <ClCompile Include="windowRaylib.cpp">
       <Filter>Fichiers sources\Window_cpp</Filter>
     </ClCompile>
-    <ClCompile Include="windowManager.cpp">
-      <Filter>Fichiers sources\Window_cpp</Filter>
-    </ClCompile>
     <ClCompile Include="windowSDL.cpp">
       <Filter>Fichiers sources\Window_cpp</Filter>
     </ClCompile>
     <ClCompile Include="spriteSDL.cpp">
-      <Filter>Fichiers sources\Render_cpp</Filter>
+      <Filter>Fichiers sources\Sprite_cpp</Filter>
     </ClCompile>
     <ClCompile Include="spriteRaylib.cpp">
-      <Filter>Fichiers sources\Render_cpp</Filter>
+      <Filter>Fichiers sources\Sprite_cpp</Filter>
     </ClCompile>
-    <ClCompile Include="renderManager.cpp">
-      <Filter>Fichiers sources\Render_cpp</Filter>
+    <ClCompile Include="customVector2.cpp">
+      <Filter>Fichiers sources\Math_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="point.cpp">
+      <Filter>Fichiers sources\Math_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="rect.cpp">
+      <Filter>Fichiers sources\Math_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="circle.cpp">
+      <Filter>Fichiers sources\Math_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="customColor.cpp">
+      <Filter>Fichiers sources\Math_cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,9 +77,6 @@
     <ClInclude Include="timeManager.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="windowManager.h">
-      <Filter>Fichiers d%27en-tête\Window_h</Filter>
-    </ClInclude>
     <ClInclude Include="windowRaylib.h">
       <Filter>Fichiers d%27en-tête\Window_h</Filter>
     </ClInclude>
@@ -72,16 +84,28 @@
       <Filter>Fichiers d%27en-tête\Window_h</Filter>
     </ClInclude>
     <ClInclude Include="spriteSDL.h">
-      <Filter>Fichiers d%27en-tête\Render_h</Filter>
-    </ClInclude>
-    <ClInclude Include="renderManager.h">
-      <Filter>Fichiers d%27en-tête\Render_h</Filter>
+      <Filter>Fichiers d%27en-tête\Sprite_h</Filter>
     </ClInclude>
     <ClInclude Include="spriteRaylib.h">
-      <Filter>Fichiers d%27en-tête\Render_h</Filter>
+      <Filter>Fichiers d%27en-tête\Sprite_h</Filter>
     </ClInclude>
     <ClInclude Include="includes.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="point.h">
+      <Filter>Fichiers d%27en-tête\Math_h</Filter>
+    </ClInclude>
+    <ClInclude Include="customVector2.h">
+      <Filter>Fichiers d%27en-tête\Math_h</Filter>
+    </ClInclude>
+    <ClInclude Include="rect.h">
+      <Filter>Fichiers d%27en-tête\Math_h</Filter>
+    </ClInclude>
+    <ClInclude Include="circle.h">
+      <Filter>Fichiers d%27en-tête\Math_h</Filter>
+    </ClInclude>
+    <ClInclude Include="customColor.h">
+      <Filter>Fichiers d%27en-tête\Math_h</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

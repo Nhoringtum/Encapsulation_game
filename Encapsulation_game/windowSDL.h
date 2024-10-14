@@ -1,21 +1,22 @@
 #ifndef __WINDOWSDL_H__
 #define __WINDOWSDL_H__
-#include "windowManager.h"
-#include <iostream>
-#include <SDL2/SDL.h>
+#include "libManager.h"
 
-class WindowSDL : WindowManager
+class WindowSDL
 {
 public:
 	WindowSDL();
-	// Pointers to our window and surface
-	SDL_Surface* m_winSurface = NULL;
-	SDL_Window* m_window = NULL;
+	Uint64 m_start;
+	Uint64 m_end;
 
-	int initSDL();
-	int initWindow();
-	int initSurface();
-	void updateWindow();
+	SDL_Window* m_window;
+
+	int init_sdl();
+	int init_window();
+	void update_window();
+	void draw_fps();
+	void start_frame();
+	void end_frame();
 	void pause();
 
 	~WindowSDL();
